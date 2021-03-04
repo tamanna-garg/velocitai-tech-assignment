@@ -1,0 +1,118 @@
+body{
+     font-family:'Quicksand;
+}
+
+h1{
+     text-align:center;
+}
+h2{
+    font-family:"Goudy Old Style";
+}
+p1{
+   text-align:center;
+   font-family:"cursive";
+   margin:25em;
+}
+img{
+    width:100%;
+    dispaly:block;
+    background:#808080;
+}
+ 
+.container{
+           width:80em;
+           margin:auto;
+}
+
+.products{
+          background:#f0f8ff;
+          padding:3.2em 0;
+}
+
+.products .text-light{
+                      text-align:center;
+                      width:70%;
+                      margin:0.9em auto;
+}
+.product{
+        margin:2em;
+        position:relative;
+}
+.product-content{
+                   background:#DCDCDC;
+                   padding:3em 0.5em 2em 0.5em;
+                   cursor:pointer;
+}
+.product-img{   
+             background:#FFFFFF;
+             box-shadow:0 0 20px 10px #FFFFFF;
+             width:200px;
+             height:210px;
+             margin:0 auto;
+             body-radius:50%;
+             transition:background 0.5s ease;
+}
+.product-button{
+                display:flex;
+                margin-top:1.4em;
+                transition:capacity 0.6s ease;
+                justify-content:center;
+                capacity:1;
+}
+
+.button-cart{
+             background:black;
+             color:white;
+}
+.button-cart:hover{
+                   background:green;
+}
+.button-buy{
+            background:white;
+}
+.button-buy:hover{
+                  background:green;
+} 
+.product-info{
+              background:white;
+              padding:2em;
+}
+
+.product-name{
+              color:black;
+              display:block;
+              font-size:1em;
+              text-transform:uppercase;
+              font-weight:bold;              
+}
+
+.product-price{
+               dispaly:inline-block;
+}
+
+@media screen and (min-width:992px){
+                                    .product-item{
+                                                   display:grid;
+                                                   grid-template-columns:repeat(2, 1fr);
+                                     }
+}
+@media screen and (min-width:1200px){
+                                    .product-item{
+                                                
+                                                   grid-template-columns:repeat(3, 1fr);
+                                     }
+                                     .product{
+                                              margin-right:1em;
+                                              margin-left:1em;
+                                     }
+                                     .product.text-light{
+                                                         width:50px;
+                                     }
+}
+
+@media screen and (min-width:1336px){
+                                    .product-item{
+                                                   grid-template-columns:repeat(4,1fr);
+                                     }
+}
+
